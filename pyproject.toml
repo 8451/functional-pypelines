@@ -71,6 +71,9 @@ dev = [
     "pypelines[doc]",
 ]
 
+[project.scripts]
+pypelines = "pypelines.api.cli:cli_run"
+
 [tool.pytest.ini_options]
 testpaths = [
     "tests/"
