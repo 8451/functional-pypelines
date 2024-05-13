@@ -1,0 +1,11 @@
+{
+    "PIPELINE": [
+        "pkg.pipeline.double",
+        "pkg.pipeline.negate",
+        "pkg.pipeline.to_string"
+    ],
+    "DATA": 2,
+    "VALIDATORS": [
+        "pkg.pipeline.always_fail_validator"
+    ]
+}

@@ -1,0 +1,94 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pypelines"
+authors = [
+    {name = "Austin Warner", email = "austin.warner@8451.com"},
+    {name = "Michael Stoepel", email = "michael.stoepel@8451.com"},
+]
+description = "Framework for creating composable functions, including an API for running them via a JSON config."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: Other/Proprietary License",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python",
+]
+dependencies = [
+    "click>=7.0,<9.0",
+    "click-default-group>=1.2.2,<2.0",
+    "typing_extensions>=4.0; python_version<\"3.8\"",
+]
+dynamic = ["version"]
+
+[project.license]
+file = "LICENSE"
+
+[tool.hatch.version]
+path = "pypelines/_version.py"
+
+[project.urls]
+repository = "https://github.com/8451/pypelines"
+documentation = "https://8451.github.io/pypelines"
+bugs = "https://github.com/8451/pypelines/issues"
+
+[project.optional-dependencies]
+test = [
+    "coverage",
+    "coverage-badge",
+    "pytest",
+    "pytest-cov",
+    "pytest-console-scripts",
+]
+doc = [
+    "nbsphinx",
+    "recommonmark",
+    "sphinx",
+    "sphinx_rtd_theme",
+    "sphinxcontrib.napoleon",
+    "myst-parser",
+    "sphinxemoji",
+]
+dev = [
+    "bump2version",
+    "mypy",
+    "black",
+    "flake8>=3.7.9",
+    "pre-commit",
+    "coverage",
+    "pypelines[test]",
+    "pypelines[doc]",
+]
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests/"
+]
+
+[tool.black]
+line-length = 88
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''

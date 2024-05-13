@@ -1,0 +1,11 @@
+{
+    "PIPELINE": [
+        "pkg.pipeline.double", # You cant do comments like this in JSON, this should fail
+        "pkg.pipeline.negate",
+        "pkg.pipeline.to_string"
+    ],
+    "DATA": 2,
+    "VALIDATORS": [
+        "pkg.pipeline.always_fail_validator"
+    ]
+}
