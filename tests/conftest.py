@@ -2,7 +2,7 @@ import tempfile
 
 import pytest
 
-from pypelines.core import Pipeline
+from functional_pypelines.core import Pipeline
 
 
 @pytest.fixture(scope="package")

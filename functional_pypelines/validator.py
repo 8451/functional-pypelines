@@ -94,8 +94,8 @@ class ValidatorPipeline(Pipeline[ValidatorData, ValidatorData]):
         -------------
         >>> from typing import Any
         >>> import os
-        >>> from pypelines import Pipeline
-        >>> from pypelines.validator import (
+        >>> from functional_pypelines import Pipeline
+        >>> from functional_pypelines.validator import (
         ...     ValidatorPipeline, SUCCESS, FAILURE, ValidationResult
         ... )
         >>>

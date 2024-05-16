@@ -76,7 +76,7 @@ class PipelineDebugger(PipelineIterator):
 
     Example Usage
     -------------
-    >>> from pypelines import Pipeline
+    >>> from functional_pypelines import Pipeline
     >>>
     >>> @Pipeline.step
     ... def add_one(x: float) -> float:
@@ -125,7 +125,7 @@ class Pipeline(Frozen, Generic[A, B]):
 
     Example Usage
     -------------
-    >>> from pypelines import Pipeline
+    >>> from functional_pypelines import Pipeline
     >>>
     >>> # As a decorator
     >>> @Pipeline.step
@@ -190,7 +190,7 @@ class Pipeline(Frozen, Generic[A, B]):
         arguments to maintain state, you could do something like this:
 
         >>> from typing import Callable, Dict, Any
-        >>> from pypelines import Pipeline
+        >>> from functional_pypelines import Pipeline
         >>>
         >>> KwargType = Dict[str, Any]
         >>>
@@ -316,7 +316,7 @@ class Pipeline(Frozen, Generic[A, B]):
 
         See Also
         --------
-        :class:`pypelines.validator.Validator`
+        :class:`functional_pypelines.validator.Validator`
         CLI
         """
         return Pipeline(Identity())
@@ -471,7 +471,7 @@ class Pipeline(Frozen, Generic[A, B]):
         Example Usage
         -------------
 
-        >>> from pypelines import Pipeline
+        >>> from functional_pypelines import Pipeline
         >>>
         >>> @Pipeline.step
         ... def add_one(x: float) -> float:

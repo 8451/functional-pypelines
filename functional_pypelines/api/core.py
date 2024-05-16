@@ -187,19 +187,19 @@ run.__doc__ = """Run the pipeline defined in the config dictionary.
 
     The "DATA" key (OPTIONAL) must be a JSON object. This object will be
     passed to the pipeline as the data argument, and will be parsed using
-    the Pipeline class's :meth:`pypelines.Pipeline.from_json` method.
+    the Pipeline class's :meth:`functional_pypelines.Pipeline.from_json` method.
     If the "DATA" key is not present, the pipeline will be passed the result
-    of calling the Pipeline class's :meth:`pypelines.Pipeline.default_data`
+    of calling the Pipeline class's :meth:`functional_pypelines.Pipeline.default_data`
     method.
 
     The "VALIDATORS" key (OPTIONAL) must be a list of strings, where each
     string  is a fully-qualified name of a pipeline class. The pipeline
     classes must be importable from the current working directory. The
     validator pipelines should be subclasses of
-    :class:`pypelines.validator.ValidatorPipeline`,
+    :class:`functional_pypelines.validator.ValidatorPipeline`,
     and will be run before the main pipeline. If the validator pipeline fails,
     the main pipeline will not be run. If the main pipeline's class defines
-    a :meth:`pypelines.Pipeline.base_validator` attribute, it will be run
+    a :meth:`functional_pypelines.Pipeline.base_validator` attribute, it will be run
     before the validator pipelines defined here.
 
     Parameters

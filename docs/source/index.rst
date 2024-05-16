@@ -4,8 +4,8 @@
    contain the root `toctree` directive.
 
 
-Confectioner
-------------
+Functional Pypelines
+--------------------
 
 Framework for creating composable functions, including an API for running them via a JSON config. Get started with the
 :doc:`Installation Instructions <installation>`.

@@ -1,7 +1,7 @@
 import pytest
 from pkg.pipeline import double
 
-from pypelines.api._import import import_string
+from functional_pypelines.api._import import import_string
 
 
 def test_import_string():

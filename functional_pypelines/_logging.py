@@ -23,7 +23,7 @@ class FileLogger(PypelinesLogger):
 
     def __init__(self, path: str):
         self._path = path
-        self._logger = logging.getLogger("pypelines")
+        self._logger = logging.getLogger("functional_pypelines")
         self._handler = logging.FileHandler(path)
 
         self._logger.setLevel(logging.INFO)

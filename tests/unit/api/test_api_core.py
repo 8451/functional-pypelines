@@ -2,9 +2,9 @@ import json
 
 import pytest
 
-import pypelines.api.core as api
-from pypelines.core import Pipeline
-from pypelines.validator import ValidationError
+import functional_pypelines.api.core as api
+from functional_pypelines.core import Pipeline
+from functional_pypelines.validator import ValidationError
 
 good_config = json.load(open("tests/pkg/good_config.json"))
 bad_config = json.load(open("tests/pkg/bad_config.json"))

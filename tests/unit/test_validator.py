@@ -1,7 +1,7 @@
 import pytest
 
-from pypelines.core import Pipeline
-from pypelines.validator import (
+from functional_pypelines.core import Pipeline
+from functional_pypelines.validator import (
     FAILURE,
     ValidationError,
     ValidatorData,

@@ -1,7 +1,7 @@
 # Installation
 
-Pypelines is for install via pip.
+Functional Pypelines is for install via pip.
 
 ```bash
-pip install pypelines
+pip install functional-pypelines
 ````

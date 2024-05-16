@@ -2,7 +2,7 @@ from typing import Any
 
 import pytest
 
-from pypelines.core import PIPELINE_END, Pipeline
+from functional_pypelines.core import PIPELINE_END, Pipeline
 
 
 def test_default_data():

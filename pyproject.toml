@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "pypelines"
+name = "functional-pypelines"
 authors = [
     {name = "Austin Warner", email = "austin.warner@8451.com"},
     {name = "Michael Stoepel", email = "michael.stoepel@8451.com"},
@@ -36,12 +36,12 @@ dynamic = ["version"]
 file = "LICENSE"
 
 [tool.hatch.version]
-path = "pypelines/_version.py"
+path = "functional_pypelines/_version.py"
 
 [project.urls]
-repository = "https://github.com/8451/pypelines"
-documentation = "https://8451.github.io/pypelines"
-bugs = "https://github.com/8451/pypelines/issues"
+repository = "https://github.com/8451/functional-pypelines"
+documentation = "https://8451.github.io/functional-pypelines"
+bugs = "https://github.com/8451/functional-pypelines/issues"
 
 [project.optional-dependencies]
 test = [
@@ -67,12 +67,12 @@ dev = [
     "flake8>=3.7.9",
     "pre-commit",
     "coverage",
-    "pypelines[test]",
-    "pypelines[doc]",
+    "functional-pypelines[test]",
+    "functional-pypelines[doc]",
 ]
 
 [project.scripts]
-pypelines = "pypelines.api.cli:cli_run"
+functional-pypelines = "functional_pypelines.api.cli:cli_run"
 
 [tool.pytest.ini_options]
 testpaths = [

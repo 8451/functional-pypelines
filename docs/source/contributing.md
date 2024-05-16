@@ -1,13 +1,13 @@
 # Contributing
 
 If you would like to add new functionality or fix a bug, we welcome contributions. All change requests should start with
-an [issue on the repo](https://github.com/8451/pypelines/issues/new/choose). If you would like to develop the
+an [issue on the repo](https://github.com/8451/functional-pypelines/issues/new/choose). If you would like to develop the
 solution yourself, us the following flow:
 
 1. Read the [style guide](#style-guide) below
 2. Tag @8451/cobra-owners in the issue and request to be assigned the issue
    - If this is your first time contributing, ask to be granted write access to the repo
-3. Create a new branch based off of [develop](https://github.com/8451/pypelines/tree/develop)
+3. Create a new branch based off of [develop](https://github.com/8451/functional-pypelines/tree/develop)
    - Give your branch a name starting with `feature/`, `bug/` or `misc/`
 4. Clone the repo in your favorite IDE, check out your new branch, and add your changes
 5. Run the tests to ensure nothing breaks
@@ -33,12 +33,12 @@ Imports should take place at the top of the file and be broken into 4 sections, 
 them. The sections are:
 1. Standard library imports (i.e. typing, regex, math)
 2. 3rd-party library imports (i.e. numpy, pandas)
-3. Relative imports (importing other modules from the pypelines package)
+3. Relative imports (importing other modules from the `functional_pypelines` package)
 
 For sections 1-3, prefer using the fully-qualified namespace over an unqualified import (`import json` over
 `from json import load`). An exception to this rule is imports from the typing library (`from typing import List`).
 
-When importing another module from `pypelines`, write it like `from . import core`.
+When importing another module from `functional_pypelines`, write it like `from . import core`.
 
 Under no circumstances should `from module import *` be used.
 

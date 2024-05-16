@@ -27,12 +27,12 @@ def get_version(path: str):
 
 # -- Project information -----------------------------------------------------
 
-project = 'pypelines'
+project = 'functional_pypelines'
 copyright = '2024, 84.51 LLC'
 author = 'Austin Warner'
 
 # The full version, including alpha/beta/rc tags
-release = get_version('../../pypelines/_version.py')
+release = get_version('../../functional_pypelines/_version.py')
 
 
 # -- General configuration ---------------------------------------------------

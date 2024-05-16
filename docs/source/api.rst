@@ -1,29 +1,29 @@
-Pypelines API
-=============
+Functional Pypelines API
+========================
 
 Pipeline Class
 --------------
-.. autoclass:: pypelines.Pipeline
+.. autoclass:: functional_pypelines.Pipeline
     :members:
 
-.. autoclass:: pypelines.core.PipelineDebugger
+.. autoclass:: functional_pypelines.core.PipelineDebugger
     :members:
 
 Validators
 ----------
-.. autoclass:: pypelines.validator.ValidatorPipeline
+.. autoclass:: functional_pypelines.validator.ValidatorPipeline
     :members:
 
-.. autoclass:: pypelines.validator.SUCCESS
-.. autofunction:: pypelines.validator.FAILURE
+.. autoclass:: functional_pypelines.validator.SUCCESS
+.. autofunction:: functional_pypelines.validator.FAILURE
 
 JSON API
 --------
-.. autofunction:: pypelines.run
-.. autofunction:: pypelines.api.core.dry_run
+.. autofunction:: functional_pypelines.run
+.. autofunction:: functional_pypelines.api.core.dry_run
 
 CLI
 ---
-.. click:: pypelines.api.cli:cli_run
-   :prog: pypelines
+.. click:: functional_pypelines.api.cli:cli_run
+   :prog: functional_pypelines
    :nested: full

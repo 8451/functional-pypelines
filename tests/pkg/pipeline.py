@@ -1,7 +1,7 @@
 from typing import Any
 
-from pypelines import Pipeline
-from pypelines.validator import FAILURE, SUCCESS, ValidatorPipeline
+from functional_pypelines import Pipeline
+from functional_pypelines.validator import FAILURE, SUCCESS, ValidatorPipeline
 
 
 @Pipeline.step

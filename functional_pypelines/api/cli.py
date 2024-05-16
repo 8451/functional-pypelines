@@ -13,7 +13,7 @@ from . import core
 def cli_run():
     """Run a pipeline defined in a JSON file from the command line.
 
-    This is a wrapper for pypelines.run. The config file must be a
+    This is a wrapper for functional_pypelines.run. The config file must be a
     JSON file that can be loaded into a dictionary.
     """
     pass

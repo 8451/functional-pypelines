@@ -1,4 +1,4 @@
-from pypelines._logging import log, set_logger
+from functional_pypelines._logging import log, set_logger
 
 
 def test_log_to_file(temp_file_name: str):
