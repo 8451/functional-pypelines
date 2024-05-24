@@ -63,7 +63,7 @@ def to_string(x):
 
 
 # Inline Composition
-2 >> double >> negate >> to_string == '-4'
+(double >> negate >> to_string)(2) == '-4'
 
 # Define new function
 str_of_neg_dbl = double >> negate >> to_string
@@ -95,7 +95,7 @@ def to_string(x):
 
 
 # Inline Composition
-2 >> (Pipeline() >> double >> negate >> to_string) == '-4'
+(Pipeline() >> double >> negate >> to_string)(2) == '-4'
 
 # Define new function
 str_of_neg_dbl = Pipeline() >> double >> negate >> to_string

@@ -502,12 +502,6 @@ class Pipeline(Frozen, Generic[A, B]):
         """
         return self.bind(right)
 
-    def __rrshift__(self, data: Any) -> B:
-        """
-        Lets us pipe data in from the left
-        """
-        return self.run(self.wrap(data))
-
     def __repr__(self):
         if self.rest is PIPELINE_END:
             return f"Pipeline({repr(self.transform)})"
