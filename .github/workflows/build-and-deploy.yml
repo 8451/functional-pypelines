@@ -11,6 +11,14 @@ name: Build & Deploy
 on:
   release:
     types: [published]
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
   workflow_dispatch:
 
 
