@@ -154,7 +154,7 @@ class Pipeline(Frozen, Generic[A, B]):
     >>> def square(x: float) -> float:
     ...     return x ** 2
     ...
-    >>> my_pipeline = Pipeline(add_one) >> double >> square
+    >>> my_pipeline = Pipeline() >> add_one >> double >> square
     >>> my_pipeline  # Pipeline[float -> float]
     >>> my_pipeline(2)  # 36
     """

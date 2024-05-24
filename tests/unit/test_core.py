@@ -57,7 +57,7 @@ def test_create():
 def test_duck_typing_bind(
     add_one: Pipeline[float, float], double: Pipeline[float, float]
 ):
-    assert (1 >> (add_one >> double >> (lambda x: str(x)))) == "4"
+    assert (add_one >> double >> (lambda x: str(x)))(1) == "4"
 
     with pytest.raises(TypeError):
         _ = add_one >> double >> object()  # type: ignore
@@ -103,7 +103,7 @@ def test_bind(add_one: Pipeline[float, float], double: Pipeline[float, float]):
 
 
 def test_wrap_bind(add_one: Pipeline[float, float], double: Pipeline[float, float]):
-    chained = 1 >> add_one >> double
+    chained = (add_one >> double)(1)
 
     assert chained == 4
 
@@ -189,4 +189,4 @@ def test_undecorated():
     def to_string(x):
         return str(x)
 
-    assert 2 >> (Pipeline() >> double >> negate >> to_string) == "-4"
+    assert (Pipeline() >> double >> negate >> to_string)(2) == "-4"
