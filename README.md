@@ -1,6 +1,6 @@
 # Functional Pypelines
 
-![](https://img.shields.io/badge/version-3.2.0-blue.svg)
+![](https://img.shields.io/badge/version-1.0.0-blue.svg)
 [![lifecycle](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://www.tidyverse.org/lifecycle/#stable)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![Coverage](https://raw.githubusercontent.com/8451/functional-pypelines/meta/coverage/coverage.svg)](https://github.com/8451/functional-pypelines/tree/meta/coverage)
